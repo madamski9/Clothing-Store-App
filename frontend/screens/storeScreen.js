@@ -53,7 +53,7 @@ const StoreScreen = ({ onLogout }) => {
 
     return (
     <View style={styles.container}>
-    <Header onLogout={showConfirmAlert} />
+    {/* <Header onLogout={showConfirmAlert} /> */}
       <ScrollView style={styles.main} showsVerticalScrollIndicator={false}>
         <TouchableOpacity 
           style={[styles.button, styles.buttonHover]}

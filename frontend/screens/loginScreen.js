@@ -3,6 +3,8 @@ import { View, Text, TextInput, Button, Alert, TouchableOpacity } from 'react-na
 import axios from 'axios'
 import styles from './stylesLogin.js'
 
+const ip = ""
+
 const Login = ({ onLogin }) => {
     const [ email, setEmail ] = useState('')
     const [ password, setPassword ] = useState('')
@@ -30,7 +32,7 @@ const Login = ({ onLogin }) => {
             password: password
         }
 
-        axios.post("http://ip:8080/register", registrationData)
+        axios.post(`http://${ip}:8080/register`, registrationData)
             .then(result => {
                 console.log(result.data)
                 console.log("udalo sie zarejestrowac")
@@ -62,8 +64,9 @@ const Login = ({ onLogin }) => {
             email: email,
             password: password
         }
-        axios.post("http://ip:8080/login", loginData)
+        axios.post(`http://${ip}:8080/login`, loginData)
             .then(response => {
+                console.log("doszlo tutaj")
                 console.log(response.data)
                 onLogin(email, password)
             })

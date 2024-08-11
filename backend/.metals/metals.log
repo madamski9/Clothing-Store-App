@@ -3611,3 +3611,210 @@ WARNING: Unmatched cancel notification for request id 3298
 2024.06.26 00:58:06 WARN  Could not load snapshot text for /Users/macciek/studia/scala/portfolio/aplikacja/backend/src/main/scala/com/example/Main.scala
 2024.06.26 00:58:06 WARN  Could not load snapshot text for /Users/macciek/studia/scala/portfolio/aplikacja/backend/src/main/scala/com/example/Main.scala
 2024.06.26 00:58:07 INFO  time: compiled root in 1.04s
+cze 26, 2024 5:15:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4167
+2024.06.26 17:15:37 INFO  compiling root (1 scala source)
+2024.06.26 17:15:39 INFO  time: compiled root in 1.33s
+2024.06.26 17:18:26 INFO  compiling root (1 scala source)
+2024.06.26 17:18:28 INFO  time: compiled root in 1.16s
+2024.06.26 17:36:04 INFO  compiling root (1 scala source)
+2024.06.26 17:36:04 INFO  time: compiled root in 0.93s
+2024.06.26 17:40:08 INFO  compiling root (1 scala source)
+2024.06.26 17:40:09 INFO  time: compiled root in 1.47s
+2024.06.26 17:43:42 INFO  compiling root (1 scala source)
+2024.06.26 17:43:42 INFO  time: compiled root in 0.86s
+2024.06.26 17:44:01 ERROR Failed to tokenize input for semantic tokens for /Users/macciek/studia/scala/portfolio/aplikacja/backend/src/main/scala/com/example/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:142: error: unclosed string interpolation
+	val ip" = 
+        ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:32)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:32)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringPart(LegacyScanner.scala:605)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:347)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:363)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:201)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:912)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:322)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:22)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:13)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:545)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.06.26 17:44:05 INFO  compiling root (1 scala source)
+2024.06.26 17:44:06 INFO  time: compiled root in 1.12s
+2024.06.26 17:44:08 ERROR Failed to tokenize input for semantic tokens for /Users/macciek/studia/scala/portfolio/aplikacja/backend/src/main/scala/com/example/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:142: error: unclosed string literal
+	val ip: String = "192.168.0.105
+                  ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:32)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:32)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:509)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:361)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:363)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:201)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:912)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:322)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:22)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:13)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:545)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.06.26 17:44:10 INFO  compiling root (1 scala source)
+2024.06.26 17:44:10 INFO  time: compiled root in 0.85s
+2024.06.26 17:44:15 INFO  compiling root (1 scala source)
+2024.06.26 17:44:15 INFO  time: compiled root in 0.49s
+2024.06.26 17:44:21 INFO  compiling root (1 scala source)
+2024.06.26 17:44:21 INFO  time: compiled root in 0.55s
+2024.06.26 17:45:01 ERROR Failed to tokenize input for semantic tokens for /Users/macciek/studia/scala/portfolio/aplikacja/backend/src/main/scala/com/example/Main.scala
+scala.meta.tokenizers.TokenizeException: <input>:142: error: unclosed string literal
+	val ip: String = "192.168.0.37
+                  ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:32)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:32)
+	at scala.meta.internal.tokenizers.LegacyScanner.getStringLit(LegacyScanner.scala:509)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchDoubleQuote$1(LegacyScanner.scala:361)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:363)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:201)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:912)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:17)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:17)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:322)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:22)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:13)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:545)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.06.26 17:45:02 INFO  compiling root (1 scala source)
+2024.06.26 17:45:02 INFO  time: compiled root in 0.49s
+2024.06.28 22:20:33 INFO  compiling root (1 scala source)
+2024.06.28 22:20:34 INFO  time: compiled root in 1.31s
+2024.07.07 10:42:03 INFO  Shutting down server
+2024.07.07 10:42:03 INFO  shutting down Metals
+lip 07, 2024 10:42:03 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+INFO: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.nio.channels.AsynchronousCloseException
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.RequestMonitorImpl$$anon$1.consume(ServerLivenessMonitor.scala:41)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:135)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:88)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.onBuildExit(Unknown Source)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1(BuildServerConnection.scala:178)
+	at scala.meta.internal.metals.BuildServerConnection.$anonfun$shutdown$1$adapted(BuildServerConnection.scala:174)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.nio.channels.AsynchronousCloseException
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at java.base/sun.nio.ch.SinkChannelImpl.endWrite(SinkChannelImpl.java:263)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:285)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:93)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:171)
+	at java.base/java.io.OutputStream.write(OutputStream.java:127)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:151)
+	at scala.meta.internal.metals.ClosableOutputStream.write(ClosableOutputStream.scala:26)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:137)
+	at java.base/java.io.FilterOutputStream.write(FilterOutputStream.java:108)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:67)
+	... 10 more
+
+2024.07.07 10:42:03 INFO  Shut down connection with build server.
+2024.07.07 10:42:03 INFO  Exiting server
+2024.07.07 10:42:32 INFO  Started: Metals version 1.3.2 in folders '/Users/macciek/studia/scala/portfolio/aplikacja/backend' for client Visual Studio Code 1.90.2.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@17b3a3fc]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@53b5809f]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@17b3a3fc]
+2024.07.07 10:42:33 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.07 10:42:34 INFO  no build target found for /Users/macciek/studia/scala/portfolio/aplikacja/backend/src/main/scala/com/example/Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.07 10:42:34 INFO  Attempting to connect to the build server...
+2024.07.07 10:42:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/macciek/studia/scala/portfolio/aplikacja/backend/.metals/bsp.trace.json or /Users/macciek/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.07.07 10:42:34 INFO  time: Connected to build server in 0.64s
+2024.07.07 10:42:34 INFO  Connected to Build server: Bloop v1.5.18
+2024.07.07 10:42:35 INFO  time: Imported build in 0.13s
+2024.07.07 10:42:38 INFO  time: indexed workspace in 2s
+2024.07.07 10:42:38 INFO  compiling root-test (1 scala source)
+2024.07.07 10:42:39 INFO  time: compiled root-test in 1.02s
+lip 07, 2024 10:43:08 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+lip 07, 2024 10:43:09 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+lip 11, 2024 6:52:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+lip 11, 2024 6:52:54 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.07.28 19:09:59 INFO  Started: Metals version 1.3.2 in folders '/Users/macciek/studia/scala/portfolio/aplikacja/backend' for client Visual Studio Code 1.90.2.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@5e1b9ecf]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@1b985e6b]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@5e1b9ecf]
+2024.07.28 19:10:15 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.28 19:10:22 INFO  Shutting down server
+2024.07.28 19:10:22 INFO  shutting down Metals
+2024.07.28 19:10:22 INFO  no build target found for /Users/macciek/studia/scala/portfolio/aplikacja/backend/src/main/scala/com/example/Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.07.28 19:10:22 WARN  sql closed: select path, text, md5 from fingerprints;
+2024.07.28 19:10:22 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.07.28 19:10:24 INFO  Attempting to connect to the build server...
+2024.08.05 15:34:29 INFO  Started: Metals version 1.3.2 in folders '/Users/macciek/studia/scala/portfolio/aplikacja/backend' for client Visual Studio Code 1.90.2.
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@575e26da]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@36087580]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@575e26da]
+2024.08.05 15:34:29 WARN  Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+2024.08.05 15:34:31 INFO  no build target found for /Users/macciek/studia/scala/portfolio/aplikacja/backend/src/main/scala/com/example/Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.05 15:34:31 INFO  Attempting to connect to the build server...
+2024.08.05 15:34:34 INFO  no build target found for /Users/macciek/studia/scala/portfolio/aplikacja/backend/src/main/scala/com/example/Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.05 15:34:38 INFO  no build target found for /Users/macciek/studia/scala/portfolio/aplikacja/backend/src/main/scala/com/example/Main.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.08.05 15:34:39 INFO  restarted 1 presentation compiler
+2024.08.05 15:34:39 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/macciek/studia/scala/portfolio/aplikacja/backend/.metals/bsp.trace.json or /Users/macciek/Library/Caches/org.scalameta.metals/bsp.trace.json
+2024.08.05 15:34:39 INFO  time: Connected to build server in 9.25s
+2024.08.05 15:34:39 INFO  Connected to Build server: Bloop v1.5.18
+2024.08.05 15:34:40 INFO  time: Imported build in 0.23s
+2024.08.05 15:34:46 INFO  time: indexed workspace in 5.54s
+2024.08.05 15:34:46 INFO  compiling root-test (1 scala source)
+2024.08.05 15:34:54 INFO  time: compiled root-test in 8.2s
+2024.08.05 15:40:18 INFO  compiling root (1 scala source)
+2024.08.05 15:40:22 INFO  time: compiled root in 3.17s
+2024.08.11 18:25:20 INFO  compiling root (1 scala source)
+2024.08.11 18:25:22 INFO  time: compiled root in 2.12s
