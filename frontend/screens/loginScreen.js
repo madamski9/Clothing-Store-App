@@ -3,7 +3,7 @@ import { View, Text, TextInput, Button, Alert, TouchableOpacity } from 'react-na
 import axios from 'axios'
 import styles from './stylesLogin.js'
 
-const ip = ""
+const ip = "localhost:3000"
 
 const Login = ({ onLogin }) => {
     const [ email, setEmail ] = useState('')
@@ -32,7 +32,7 @@ const Login = ({ onLogin }) => {
             password: password
         }
 
-        axios.post(`http://${ip}:8080/register`, registrationData)
+        axios.post(`http://${ip}/register`, registrationData)
             .then(result => {
                 console.log(result.data)
                 console.log("udalo sie zarejestrowac")
@@ -64,7 +64,7 @@ const Login = ({ onLogin }) => {
             email: email,
             password: password
         }
-        axios.post(`http://${ip}:8080/login`, loginData)
+        axios.post(`http://${ip}/login`, loginData)
             .then(response => {
                 console.log("doszlo tutaj")
                 console.log(response.data)
@@ -72,7 +72,7 @@ const Login = ({ onLogin }) => {
             })
             .catch(error => {
                 //console.error("Login error:", error)
-                console.log("chuj error", error)
+                console.log("error", error)
                 Alert.alert("Logowanie nie powiodlo sie, zarejestruj sie")
                 //setError("Logowanie nie powiodlo sie. Sprobuj ponownie")
             })

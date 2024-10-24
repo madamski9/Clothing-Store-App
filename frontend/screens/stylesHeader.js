@@ -1,5 +1,4 @@
 import { StyleSheet } from "react-native";
-import chroma from 'chroma-js';
 
 const styles = StyleSheet.create({
     mainContainer: {

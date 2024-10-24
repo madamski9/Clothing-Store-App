@@ -139,7 +139,7 @@ def mainProg: Unit = {
 			}
 		}
 	
-	val ip: String = ""
+	val ip: String = "localhost"
 	Http().newServerAt(ip, 8080).bind(route)
 	println(s"Server online at http://$ip:8080/")
 } 

@@ -1,7 +1,6 @@
 import { ScrollView, StatusBar, Text, Image, TouchableOpacity, View, Alert } from 'react-native';
 import React, { useState } from 'react';
 import styles from './../styles.js'
-import Header from './../header.js'
 import { useNavigation } from '@react-navigation/native';
 
 const StoreScreen = ({ onLogout }) => {
